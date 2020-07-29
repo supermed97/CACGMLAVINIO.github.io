@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>C.A.C.G.M LAVINIO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="first.css">	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="func.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.openBtn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.openBtn:hover {
+  background: #bbb;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
+#textcon{visibility: hidden;
+
+}
+</style>
+</head>
+<body>
+    <nav id="nav1" class=  "navbar navbar-expand-sm  sticky-top" style="background-color:rgb(34, 29, 29)">
+        <div id="par" class="navbar-header left ">
+              <a class="navbar-brand" href="churchst.html"><div class="row"><img src="pic/lgf (1).png"><span id="tit"> C.A.C.G.M LAVINIO</span></div></a>
+        </div>  <!-- donot include ul tag in a div causes conflict with ml-auto -->
+        <ul class="nav navbar-nav ml-auto" > <!-- ml-auto alligns navbar elements to the right -->
+              <li class="li1" id="par1" class="active"  ><a href="churchst.html"><span  style="color:rgb(255, 255, 255) ;font-weight:bold">HOME</span></a></li>
+              <li class="li1" id="par2" ><a href="whoarewe.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold">WHO ARE WE </span> </a> </li>
+              <li class="li1" id="par3" ><a href="https://www.facebook.com/CACGM-House-of-Favor-Lavinio-346845169202851"><span style="color:rgb(255, 255, 255) ;font-weight:bold">LIVE TV</span></a></li>
+              <li class="li1" id="par4"><a href="eac.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold"> CALENDAR</span></a></li>
+              <li class="li1" id="par4"><a href="events.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold">SEARCH FOR AN EVENT</span></a></li>
+              <li class="li1" id="par5"><a href="st.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold">SUNDAY TEACHINGS</span></a></li>
+            </ul>
+           
+         
+        </nav>
+
+<div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+    
+    
+        <input id="searcharea-id"  type="text" placeholder="Search.." ><!-- text area for searching -->
+        <button id="buttonid" onclick ="med()" type="submit" ><i class="fa fa-search"></i></button><!--search button inially disconnected with textarea , but when clicked jquery does the connection -->
+    
+  </div>
+</div>
+
+<script>
+  function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+  
+  }
+
+  function med(){
+      
+      document.getElementById("textcon").style.visibility= "visible" ;
+      document.getElementById("myOverlay").style.display = "none";
+      
+      
+      }
+      
+  </script>
+
+ <div class="center">
+  <h1>CANT REMEMBER THE DATE OF ANY EVENT ?</h1><br>
+  <h2><p>Click on the button to open the search box.</p></h2>
+  <button class="openBtn" onclick="openSearch()">Open Search Box</button> </div>
+
+
+<div class="container">
+<div id="textcon" >
+
+    <form > 
+        <div class="form-group">
+          <h1>SEARCH RESULTS</h1>
+          
+          <textarea class="form-control  btn button_white1 scaling" rows="18" id="results" style="font-size: 20px;font-weight: bold ">
+                
+             RESULTS FOUND : 
+          </textarea>
+        </div>
+      </form>
+
+</div></div>
+
+<script>
+    
+    </script>
+
+
+<footer id ="fter"class="main-footer"  style="background-color:whitesmoke">
+  <span id="ft">
+  <div class="wrap"></div>
+  <ul class=" row ">
+  <li class="widget col-4 widget_text"><h3 class="widgettitle">CONTACT</h3> <div class="textwidget"> phone number : +393888744197 <br> <a href="http://yahoo.com"><strong>EMAIL</strong></a> medmedazeez@yahoo.com</div>
+  </li>
+  <li class="widget col-4 bunyad-about"> <h2 class="widgettitle">About Pastor Evans Omorogbe</h2>
+  <div class="about-widget">
+  <p>A QUICK BIOGRAPHY <a href="#"><strong>READ MORE&gt;&gt;<strong /></a></p>
+  </div>
+  </li>
+  <li class="widget  "><img style="margin-top:-5px" class=  "btn button_white scaling" src=pic/fbsmm.png><a class="rsswidget" href="https://www.facebook.com/CACGM-House-of-Favor-Lavinio-346845169202851">LIKE AND FOLLOW US ON FB</a>
+  </div>
+ <div class="lower-foot">
+  <div class="wrap">
+  
+<span>
+  </span></div></div>
+  </div></footer>
+  DEVELOPED BY MOH'D
+</body>
+</html>

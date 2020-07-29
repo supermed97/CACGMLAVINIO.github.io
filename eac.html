@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>C.A.C.G.M LAVINIO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel ="stylesheet" href="first.css">	
+  <link rel ="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+    </style>
+</head>
+<body>
+  <nav id="nav1" class=  "navbar navbar-expand-sm navbar-inverse sticky-top" >
+    <div class="container">   
+<div id="par" class="navbar-header  ">
+  <button onclick=fed() type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+      <a class="navbar-brand" href="churchst.html"><div class="row"><img src="pic/lgf (1).png"><span id="tit"> C.A.C.G.M LAVINIO</span></div></a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">  <!-- donot include ul tag in a div causes conflict with ml-auto -->
+<ul class="nav navbar-nav ml-auto" > <!-- ml-auto alligns navbar elements to the right -->
+      <li class="li1" id="par1" class="active" style="background-color:rgb(255, 255, 255)" ><a href="churchst.html"><span  style="font-weight:bold">HOME</span></a></li>
+      <li class="li1" id="par2" ><a href="whoarewe.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold">WHO ARE WE </span> </a> </li>
+      <li class="li1" id="par3" ><a href="https://www.facebook.com/CACGM-House-of-Favor-Lavinio-346845169202851"><span style="color:rgb(255, 255, 255) ;font-weight:bold">LIVE TV</span></a></li>
+      <li class="li1" id="par4"><a href="eac.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold"> CALENDAR</span></a></li>
+      <li class="li1" id="par4"><a href="events.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold">SEARCH FOR AN EVENT</span></a></li>
+      <li class="li1" id="par5"><a href="st.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold">SUNDAY TEACHINGS</span></a></li>
+    </ul>
+</div>
+</div>
+</nav>
+
+
+<style>
+    #timer {
+      text-align: center;
+      font-size: 45px;
+      margin-top: 0px;
+    }
+    #divspcl {
+  font-size:48px;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </style>
+    </head>
+    <body> <br><br>
+       <div style="text-align: center" >  <h1 >NEXT WEEKLY ACTIVITY IN CHURCH :</br>  </h1> <br><br>
+      <h2><div class="jumbotron btn button_white floating"> <h1 style="font-size: 20px;"> ZONAL HOUSE FELLOWSHIPS </h1> </div></h2> <br>
+      
+      </div> 
+
+    <p id="timer"></p>
+   <br> 
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Aug 15, 2019 19:00:25").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("timer").innerHTML = " in " + days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    <hr> <div style="text-align: center"><h2 style="font-size: 16 px" id="wahead"> <div style="font-size: 25px" class="jumbotron btn button_white scaling">UPCOMING EVENT : <br> <h4 id="waheadd">MEN & WOMEN'S ANNUAL CONVENTION</div></h2>
+     </div> 
+     <div class="text-center">
+     <div id="divspcl" class="fa ">
+
+<script>
+function hourglass() {
+  var a;
+  a = document.getElementById("divspcl");
+  a.innerHTML = "&#xf251;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf252;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf253;";
+    }, 2000);
+}
+hourglass();
+setInterval(hourglass, 3000);
+</script>
+</div>
+     </div>  
+     
+     <div id="funzionalità" class="box padded centered" style="margin-bottom: 30px;"><div class="text-center"> <img src="pic/test.jpeg" alt="Nature" class="responsive" width="600" height="400">
+   </div></div>
+
+<br><br><br>
+
+<div id ="donazione" class="box padded centered" style="background-color: white; color: black">
+			<br>
+      <h1 style="color: blue" class="text-center"> AND ALSO IN THIS PAGE  <br> </h1> <p style="font-size: 17px ; font-weight:bold" > MAJOR ANNOUCEMENTS AND UPDATES ABOUT THE CHURCH <br>
+      WILL BE BROADCASTED SO STAY TUNED !! </p>
+			
+			<br></div>
+
+
+
+
+  </section>
+                                    
+  <footer class="footer-distributed">
+
+      <div class="footer-left">
+          <JJimg src="img/logo.png">
+        <h3>C.A.C.G.M Lavinio </h3>
+ 
+        <p class="footer-links">
+          <a href="#">Home</a>
+          |
+        
+         
+          <a href="#">About</a>
+          |
+          <a href="#">Contact</a>
+        </p>
+ 
+        <p class="footer-company-name"> OUR YEAR OF HONOR </p>
+      </div>
+ 
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Via G.Basile 4
+             00042 </span>
+            Anzio ROME IT</p>
+        </div>
+ 
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>3888744197</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:medmedazeez@yahoo.com">cacgmlavinio@yahoo.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About us</span>
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          
+          <a href="#"><i class="fa fa-youtube"></i></a> </br></br></br></br></br></br>
+                 <div class="container"> <footer style="color:white">DEVELOPED BY MED</footer> </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>C.A.C.G.M LAVINIO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ 
+  
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel ="stylesheet" href="first.css">	
+  <link rel ="stylesheet" href="style.css">	
+   <link href="style.css" text="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/footer-distributed-with-contact-form.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+  <style>
+    #divicon {
+  font-size:30px;
+}
+      * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .responsive {
+      width: 100%;
+      height: auto;
+    }
+    #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+            </style>
+ 
+</head>
+<body>
+    
+
+
+
+        <nav id="nav1" class=  "navbar navbar-expand-sm navbar-inverse sticky-top" style="background-color: #0063a1;" >
+          <div class="container">   
+    <div id="par" class="navbar-header  ">
+        <button onclick=fed() type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+
+
+          
+            <a class="navbar-brand" href="churchst.html"><div class="row"><img id="brand-image" alt="Website Logo" src="pic/lgf (1).png"><span id="tit">   C.A.C.G.M LAVINIO  </span></div></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">  <!-- donot include ul tag in a div causes conflict with ml-auto -->
+    <ul class="nav navbar-nav ml-auto" > <!-- ml-auto alligns navbar elements to the right -->
+            <li class="li1" id="par1" class="active" style="background-color:rgb(255, 255, 255)" ><a href="churchst.html"><span  style="font-weight:bold">HOME</span></a></li>
+            <li class="li1" id="par2" ><a href="whoarewe.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold">WHO ARE WE </span> </a> </li>
+            <li class="li1" id="par3" ><a href="https://www.facebook.com/CACGM-House-of-Favor-Lavinio-346845169202851"><span style="color:rgb(255, 255, 255) ;font-weight:bold">LIVE TV</span></a></li>
+            <li class="li1" id="par4"><a href="eac.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold"> CALENDAR</span></a></li>
+            <li class="li1" id="par4"><a href="events.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold">SEARCH FOR AN EVENT</span></a></li>
+            <li class="li1" id="par5"><a href="st.html"><span style="color:rgb(255, 255, 255) ;font-weight:bold">SUNDAY TEACHINGS</span></a></li>
+          </ul>
+    </div>
+  </div>
+</nav>
+<script>
+    
+    function meed(){
+        
+        document.getElementById("hider").style.display= "block" ;
+        document.getElementById("btnhider").style.display = "none";
+        
+        
+        }
+  </script>
+  
+
+        <div >
+       <div class="text-center">
+               <h1 > A BIT OF HISTORY : </h1> <br> 
+               <h2 > THE FOUNDER OF C.A.C.G.M </h2> <br>
+             <div class="box padded centered" style="background-color: white; color: black">  <img src ="pic/ogb.jpg" class="responsive" width="600" height="400" ></div><br><br><br>
+           <span id ="wawhead" >
+             <div class="center" >
+               Rt. Rev. Apostle (Dr.) Samuel Enoragbon Ogbonmwan JP, was born in 1930, to the great 
+               Ogbonmwan-Oghodu dynasty. His father was Ogbonmwan Okunwague and his mother was
+               Deaconess Ruemwinyogho Ogbonmwan, both of blessed memory. He was born at Emodu Village, 
+               otherwise known as Ogunmwenyin Village, in Ovia North East L.G.A. of Edo State. He married his 
+               heartthrob, Deaconess Grace Ogbonmwan (Nee Obasuyi) in 1965.<p>   They are blessed with five children.
+               
+               His upbringing in a polygamous setting pushed him into a difficult beginning like others of his time, but   
+               his own situation was peculiar.         
+                      
+               He pleaded to be sent to school whereas, today, children are entreated to go to school. At that time, 
+               by reason of the number of children and the lean resources available, only the eldest son (not daughter)
+                of each wife was
+                entitled to be sent to school. His own lot, therefore, was to be sent out as house-help.
+                 Education was even not considered important for young Samuel.  </p>  
+                
+                 <button id="btnhider" style="text-align: center; font-weight:bold" class="  btn button_white scaling" id="bttonid" class onclick ="meed()"  >click to read more ..</button>
+               <div id="hider" style="display:none">
+                 <p>The use of the pejorative term "my servant" to describe young Samuel by the two uncles he stayed with,
+                on two different occasions, made him to run away to his parents. Back home, he still insisted on going to school. 
+                His parents yielded to his pleadings. He was sent to school at the advanced age of fourteen years.
+               
+               At school, he was brilliant. He had an accelerated promotion to standard II and a 
+               double promotion to move to standard III. He was equally good in sporting activities; 
+               he represented Ahmaddiya Primary School (now called Idah Prim. School) at "Empire Days", a colonial conception.
+               </p>
+               However, his quest and interest for education became short-lived. Between 1948 and 1949,
+                he had lost his sight. Unable to see, without any means of livelihood, conscious of his parents' agony,
+                 which was made worse by the despicable behaviour of the juju priests and traditional doctors contracted to heal him,
+                  he collapsed into self pity. He felt society was unkind to him; he lost all hope. On three occasions, 
+                  he attempted suicide. The survival instinct, that influenced his being sent away from home as house-help,
+                   could now be appreciated. His situation had been made worse with the death, in 1958, of his elder brother.<br><br>
+                             
+               <div >
+               <h3>HIS CONVERSION </h3>
+               However, the Lord came to his rescue. He was converted to the Christian Faith in 1954. On ,. occasions,
+                God opened his eyes but would close them back again-. The Lord said He wanted the Apostle to know 
+                He had the power to restore his sight, but that if He did, Ogbonmwan would not serve Him, as a vessel 
+                He had planned to use. This reminds us of the thorn that Satan (the enemy) planted in Apostle Paul's body, 
+                in order to torment him and for which he sought God's solution. However, God told him that His grace was sufficient
+                 for him. II Cor. 12:7-9.</div><br><br>
+               
+               <div><h3>ESTABLISHMENT OF CACGM</h3>
+               He joined Christ Apostolic Church (CAC) Ofunmwegbe Street, Oliha Quarters, Benin City, until God told him to move 
+               away to found a different Mission. So, on 3rd January, 1974, he founded Christ Apostolic Church of God Mission, 
+               over which he was the General Superintendent/Head of Mission, until his glorious Home-call on 3rd July, 2007. <br> 
+               
+               On 17th August 1970, he was ordained a Prophet. Five days after, he had his first son, Pastor Emmanuel Ogbonmwan.
+                In 1980, he was ordained an Apostle.</div>
+               
+               EVANGELICAL THRUSTS
+               He led crusade teams to all parts of Edo and Delta States (then known as Bendel) and many souls were converted 
+               in the process. Between 1981 and December 2006, he went round Europe, Canada and the U.S. to plant churches and 
+               to strengthen existing ones. Through his evangelical capacity, the gift of prayer and counselling, 
+               he was able to win thousands of souls to the Lord. Through him, majority of Edo people are now converted and 
+               have abandoned idol worshipping. There are presently more than 300 Branches of this Mission, 
+               both within and outside Nigeria.<br><br>
+                       
+               
+               <div><h2>AWARDS</h2>
+               - On 9th Nov. 1991, he was awarded an Honorary Doctoral Degree in Practical Theology, by Oral Roberts University,
+                U.S.A.
+               - Edo State Government awarded him Justice of Peace (JP) on 12th Sept. 2001
+               - In 1999, the Pentecostal Fellowship of Nigeria (PFN) gave him an award in appreciation of his Gospel work.
+               - In 2000, the Merit Media Network of Nigeria honoured him with a Certificate of Merit,
+               - In 2005, he was honoured by Vie Group as the best Edo Gospel Christian Singer in the Federation.
+               - In 2006, the Christian Gospel Artistes Association of Nigeria honoured him with the Year's best Edo Gospel Music
+                Producer, after making         him their Grand Patron. <br>
+               - To crown it all, our Royal Father, the Oba of Benin, gave him an award of "Benin Achiever", in January 2007.</div>
+               
+               His life is a perfect marriage of the lives of great men of God. He was like Moses the leader and Intercessor,
+                Paul the Preacher, David the Singer, Nehemiah the builder, Hezekiah the Reformer, Apollos the Orator, 
+                Job the Faithful and perseverant, Peter the Rock and Samuel the Prophet. He was like the biblical Joseph, 
+                through whose life story came into effect the truism that human spoiling cannot stop God's work (Gen. 50:20). 
+                The scar inflicted on him metamorphosed into a star, to guide men to God. It is the Lord's doing.</div>
+               
+              
+     </div></div>
+   <br><br><br><br>
+<!----PASTORS SECTOR -->
+   <div >
+      <div class="text-center">
+              <h1 > ABOUT OUR PASTOR : </h1> <br> 
+              <h2 > PASTOR EVANS OMOROGBE </h2> <br>
+            <div class="box padded centered" style="background-color: white; color: black">  <img src ="pic/pastor.jpg" class="responsive" width="600" height="400" ></div><br><br><br>
+
+            <div class="center" >      </div>
+      </div>
+   <section id="struttura" class="home-section color-dark bg-white">
+      <div class="container marginbot-50">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+              <div class="section-heading text-center">
+                <h1 style="font-size: 28px">   PICTURES OF OUR WORSHIP ECOSYSTEM           <div id="divicon" class=" fa">   </div>
+
+                  <script>
+                  function brakechain() {
+                    var a;
+                    a = document.getElementById("divicon");
+                    a.innerHTML = "&#xf0c1;";
+                    setTimeout(function () {
+                        a.innerHTML = "&#xf127;";
+                      }, 1000);
+                  }
+                  brakechain();
+                  setInterval(brakechain, 2000);
+                  </script>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div></h2>
+                <div class="divider-header"></div><br><br>
+                <p style="font-size: 12px" class="text-center">(click on the images below to enlarge them and <br>click them again to exit full screen)</p>
+            
+                
+                
+            
+            
+              </div>
+
+
+     <div class="row">
+        <div class="column">
+          <img  id="myImg" src="pic/row1.JPG" alt="THE JOYFUL VOICE OF MESSAIAH" style="width:100%" >
+        </div>
+        <div class="column">
+          <img id="myimg1" src="pic/row2.JPG" alt="OUR HARVEST THANKSGIVING 2018" style="width:100%">
+        </div>
+        <div class="column">
+          <img id="myimg2" src="pic/row3.JPG" alt="MID YEAR ANNUAL REVIVAL" style="width:100%">
+        </div>
+      </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01" onclick="clsimg()">
+    <div id="caption"></div>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  var img = document.getElementById("myimg1");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  var img = document.getElementById("myimg2");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+   function clsimg() { 
+    modal.style.display = "none";
+  }
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+          <JJimg src="img/logo.png">
+        <h3>C.A.C.G.M Lavinio </h3>
+ 
+        <p class="footer-links">
+          <a href="#">Home</a>
+          |
+        
+         
+          <a href="#">About</a>
+          |
+          <a href="#">Contact</a>
+        </p>
+ 
+        <p class="footer-company-name"> OUR YEAR OF HONOR </p>
+      </div>
+ 
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Via G.Basile 4
+             00042 </span>
+            Anzio ROME IT</p>
+        </div>
+ 
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>3888744197</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:medmedazeez@yahoo.com">cacgmlavinio@yahoo.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About us</span>
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          
+          <a href="#"><i class="fa fa-youtube"></i></a> </br></br></br></br></br></br>
+                 <div class="container"> <footer style="color:white">DEVELOPED BY MED</footer> </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+      
+  </body>
+  </html>
+
+
+
+  

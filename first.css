@@ -1,0 +1,341 @@
+#btton{
+
+    text-align:center
+}
+
+h1 {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: black;
+}
+.box {
+	width: 80%;
+	margin-top: 2em;
+	border-radius: 20px;
+	box-shadow: 1px 5px 14px 3px rgba(51, 51, 51, 0.18);
+	background: white;
+	color: blue;
+	max-width: 600px;
+	margin: 1.66% auto;   /* centrare */
+}
+.padded {
+			padding: 0px 20px;
+		}
+#imgc {
+    width: 100%;
+    height: auto;
+  }
+#wawhead{
+    font-size: 14.5px;
+    font-weight:bold;
+
+}
+#wahead{
+    font-size: 25px;
+    font-weight:bold;
+
+}
+#waheadd{
+    font-size: 17px;
+    font-weight:bold;
+    font-family: Kalam;
+    color:black;
+}
+#tit{
+    margin-left: 5spx;
+    font-size: 13px;
+    margin-top:27px;
+    color:whitesmoke; 
+    font-weight:bold;
+}
+#calndr{
+    margin-left:200px; 
+
+}
+.li1{
+    font-size:12px;
+    margin-left:  0px;
+
+}
+.content {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+  }
+.nav {
+    margin-left:  0px;
+    height: -20px;
+}
+
+.navbar-brand{
+    margin-top:  -15px;
+   
+}
+#parr1{
+    text-align:right;
+
+}
+#par2{
+    margin-left:  0px;
+}
+#par3{
+    margin-left:  0px;
+}
+#par4{
+    margin-left:  0px;
+
+}
+#par5{
+    margin-left:  0px;
+
+}
+#myCarousel{
+    margin-top:  -20px;
+}
+#dvv{
+    margin-top:  -20px;
+
+
+}
+
+
+#sp1{ 
+    margin-top:  -15px;
+    font-size: 23px;
+   
+    font-family:arial;
+     font-weight:bold;}
+
+     #spp1{  
+        margin-top:  -15px;
+        font-size: 14px;
+        text-align: center;
+        font-family:arial;
+         font-weight:bold;}
+     #sp2{  
+        
+        text-decoration-color: red;
+        font-size: 25px;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+         font-weight:bold;}
+    
+         #sp11{  
+            font-size: 27px;
+            
+            font-family:fantasy;
+             font-weight:bold;}
+     #dd{
+        margin-top:  0px;
+        height: -20px;
+     }
+     .cc1{font-size: 12px;
+        font-weight:bold;
+    }
+    .imgg{
+       margin-top:-5px;
+    }
+    .head{
+        color:rgb(24, 6, 6);
+    }
+     .center {
+        margin: auto;
+        width:50%;
+        padding: 00px;}
+        #contner{
+            margin-top :100px;
+        }
+     .widget{
+        font-size: 15px;
+     }
+     #fter{
+        margin-top: 100px;
+      }
+      #ft{
+        text-cols:  -20px;
+      }
+      .button_white1 {
+        margin-left:300px;
+        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+        padding: 15px 15px;
+        color: rgb(77, 125, 216);
+        background-color:#f8f8f8;
+        font-size:30px;
+        border-radius: 20px;
+        font-weight: 600;
+        transition: scale 2s;
+        margin: 5px 5px;
+        display: inline-block;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.15);
+        transition: transform 1s;
+    }
+     
+      .button_white {
+        margin-left:500px;
+        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+        padding: 15px 25px;
+        color: #FFF;
+        background-color:#0063a1;
+        font-size: 16px;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: scale 0.2s;
+        margin: 10px 10px;
+        display: inline-block;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.15);
+        transition: transform 0.2s;
+    }
+    .button_white:hover {
+        /* padding: 15px 35px; */
+        transform: scale(1.05);
+    }
+      .floating {
+        -webkit-animation-name: Floatingx;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        -moz-animation-name: Floating;
+        -moz-animation-duration: 3s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: ease-in-out;
+        margin-top: 5px;
+    }
+    .floating {
+        -webkit-animation-name: Floatingx;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        -moz-animation-name: Floating;
+        -moz-animation-duration: 3s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: ease-in-out;
+        margin-top: 5px;
+    }
+    
+    @-webkit-keyframes Floatingx {
+        from {
+            -webkit-transform: translate(0, 0px);
+        }
+    
+        65% {
+            -webkit-transform: translate(0, 15px);
+        }
+    
+        to {
+            -webkit-transform: translate(0, -0px);
+        }
+    }
+    
+    @-moz-keyframes Floating {
+        from {
+            -moz-transform: translate(0, 0px);
+        }
+    
+        65% {
+            -moz-transform: translate(0, 15px);
+        }
+    
+        to {
+            -moz-transform: translate(0, -0px);
+        }
+    }
+    
+    /* scale animation */
+    .scaling {
+        -webkit-animation-name: scalex;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        -moz-animation-name: scale;
+        -moz-animation-duration: 3s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: ease-in-out;
+    }
+    
+    @-webkit-keyframes scalex {
+        from {
+            -webkit-transform: scale(0.9);
+        }
+    
+        65% {
+            -webkit-transform: scale(1.0);
+        }
+    
+        to {
+            -webkit-transform: scale(0.9);
+        }
+    }
+    
+    @-moz-keyframes scale {
+        from {
+            -moz-transform: scale(0.9);
+        }
+    
+        65% {
+            -moz-transform: scale(1.0);
+        }
+    
+        to {
+            -moz-transform: scale(0.9);
+        }
+    }
+    
+    
+    /* responsive */
+    @media only screen
+        and (min-width : 320px)
+        and (max-width : 640px) {
+    
+    
+            h1 {
+                line-height: 1em;
+            }
+            .menu_wrapper {
+                width: inherit;
+                padding: 30px 10px;
+                margin-bottom: 50px;
+            }
+            .menu_li {
+                margin-top: 10px;
+                padding: 8px 20px;
+                font-size: 13px;
+                font-weight: 600;
+                display: inline-block;
+            }
+            .menu {
+                margin: auto;
+                text-align: center;
+                display: block;
+                float: none;
+                margin-bottom: -50px;
+            }
+            .menu_logo {
+                display: block;
+                margin: auto;
+                float: none;
+                margin-bottom: 20px;
+            }
+    
+            .feature_element {
+                display: inline-block;
+                padding: 5px 5px;
+                max-width: 120px;
+                font-size: 13px;
+                vertical-align: top;
+                height: 200px;
+            }
+           #parallaxyzs{
+                  /* The image used */
+                background: url('parallax.jpg');
+
+                       /* Set a specific height */
+                     min-height: 500px; 
+
+                        /* Create the parallax scrolling effect */
+                             background-attachment: fixed;
+                             background-position: center;
+                                     background-repeat: no-repeat;
+                                background-size: cover;}
+         
