@@ -1,0 +1,13 @@
+  INSTRUCTIONS FOR ADDING CHANGES OR NEW FILES TO REPOSITORY
+
+1) open folder in terminal
+
+2)"git add ." --> first command to run as it adds everything in the folder to git 
+
+3) {git commit -m "comments"}  --> second command is commit
+
+4 "git remote add origin repository_link" 
+
+5) "git push -u origin master" ---->  to upload files or changes 
+
+6) TRY "git push -f origin master" ----> if number 5 doesnt work
